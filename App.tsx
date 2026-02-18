@@ -181,7 +181,11 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#dae0e6] text-slate-900 font-sans selection:bg-indigo-100 pb-20">
-       {showToast && ( /* Toast unchanged */ )}
+       {showToast && (
+        <div className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 px-8 py-4 rounded-2xl shadow-2xl font-black text-[10px] tracking-[0.2em] border border-white/20 backdrop-blur-md ${toastType === 'error' ? 'bg-red-600/90 text-white' : 'bg-slate-900/90 text-white'}`}>
+          {toastMessage.toUpperCase()}
+        </div>
+      )}
 
       {/* Nav - MODIFIED for Login/Logout */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
