@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 // Firebase Imports
-import { auth, db, googleProvider } from '../firebase';
+import { auth, db, googleProvider } from './firebase';
 import { onAuthStateChanged, signInWithPopup, User } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 
