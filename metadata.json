@@ -1,0 +1,7 @@
+{
+  "name": "Drapicorn Fashion AI MVP",
+  "description": "A comprehensive fashion design assistant that refines sketches, generates technical drawings, creates model previews, and analyzes manufacturing feasibility using Gemini AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
